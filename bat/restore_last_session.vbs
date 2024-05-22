@@ -1,0 +1,1 @@
+CreateObject("WScript.Shell").Run "C:\xampp\htdocs\locurl\bat\restore_last_session.bat",0

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locurl</title>
+</head>
+<body>
+    <!-- 検索 -->
+    <form action = "kensaku.php" method = "POST">
+        <p><label><input type = "text" size = "40" name = "kensaku" placeholder = "Googleで検索するか、URLを入力してください" required></label></p>
+        <input type = "submit" value = "🔍">
+    </form>
+    
+    <!-- 同ディレクトリ内のhosts'ファイルに書き込む -->
+    <form action = "hosts.php" method = "POST">
+        <p><label><input type = "text" size = "20" name = "domain" placeholder = "元のドメイン" required></label></p>
+        <p><label><input type = "text" name = "ninidomain" placeholder = "任意のドメイン" required></label></p>
+        <input type = "submit" value = "🖱️">
+    </form>
+    
+    <!-- ブロックする広告のドメイン -->
+    <form action = "ad_block.php" method = "POST">
+        <p><label><input type = "text" name = "ad_domain" placeholder = "ブロックする広告のドメイン" required></label></p>
+        <input type = "submit" value = "🖱️">
+    </form>
+
+    <!-- ブロックを解除したいドメイン -->
+    <form action = "ad_cancel.php" method = "POST">
+        <p><label><input type = "text" name = "ad_cancel" placeholder = "ブロックを解除するドメイン" required></label></p>
+        <input type = "submit" value = "🖱️">
+    </form>
+
+    <!-- 有名有害ドメインの一括ブロック -->
+    <form action = "ad_seo.php" method = "POST">
+        <p><!--有害なドメインを一括してブロック--></p>
+        <input type = "submit" value = "一括">
+    </form>
+
+    <br>
+    <details>
+        <summary>簡略化一覧</summary>
+        <a href = "http://localhost/locurl/files/hosts'" target = "_blank">a</a>
+    </details>
+    <details>
+        <summary>ブロック一覧</summary>
+        <a href = "http://localhost/locurl/files/hosts" target = "_blank">~etc\hosts</a>
+    </details>
+    <br>
+    <br>
+    <!-- まず広告ブロックしてからドメインにアクセス -->
+    <form action = "otameshi.php" method = "POST">
+        <p><label><input type = "text" size = "40" name = "kensaku" placeholder = "広告を非表示にした快適なブラウジングはコチラ" required></label></p>
+        <input type = "submit" value = "🔍">
+    </form>
+</body>
+</html>

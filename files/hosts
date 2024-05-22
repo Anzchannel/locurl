@@ -1,0 +1,60 @@
+﻿# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+# Added by Docker Desktop
+172.22.25.244 host.docker.internal
+172.22.25.244 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+
+
+#200.3.12.1 parts.blog.livedoor.jp
+#200.3.12.1 googletagmanager.com
+#200.3.12.1 blogroll.livedoor.net
+#200.3.12.1 cdn-fluct.sh.adingo.jp
+#200.3.12.1 d.line-scdn.net
+#200.3.12.1 b.st-hatena.com
+#200.3.12.1 static.mixi.jp
+#200.3.12.1 platform.twitter.com
+#200.3.12.1 xml.affiliate.rakuten.co.jp
+#200.3.12.1 js.ad-stir.com
+#200.3.12.1 b.st-hatena.com
+#200.3.12.1 rcm.shinobi.jp
+#200.3.12.1 ajax.googleapis.com
+#200.3.12.1 pdn.adingo.jp
+
+127.0.0.1 www.oca.ac.jp
+200.3.12.1 parts.blog.livedoor.jp
+200.3.12.1 googletagmanager.com
+
+200.3.12.1 blogroll.livedoor.net
+200.3.12.1 cdn-fluct.sh.adingo.jp
+200.3.12.1 d.line-scdn.net
+200.3.12.1 b.st-hatena.com
+200.3.12.1 static.mixi.jp
+200.3.12.1 xml.affiliate.rakuten.co.jp
+200.3.12.1 js.ad-stir.com
+200.3.12.1 b.st-hatena.com
+200.3.12.1 rcm.shinobi.jp
+200.3.12.1 ajax.googleapis.com
+200.3.12.1 pdn.adingo.jp
